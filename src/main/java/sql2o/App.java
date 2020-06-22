@@ -1,7 +1,5 @@
-package dao;
+package sql2o;
 
-import dao.SightingDao;
-import dao.Sql2oSightingDao;
 import org.sql2o.Sql2o;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;

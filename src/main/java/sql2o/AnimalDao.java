@@ -1,13 +1,16 @@
-package dao;
+package sql2o;
 
 import java.util.List;
 
-public interface AnimalDao<Animal> {
+public interface AnimalDao {
 
     //LIST
-    List<Animal> getAll();
+    <Animal> List<Animal> getAll();
 
-    void add();
+    //CREATE
+    default void add() {
+        add();
+    }
 
     //CREATE
     void add(Animal animal);

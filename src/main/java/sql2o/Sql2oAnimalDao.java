@@ -1,4 +1,4 @@
-package dao;
+package sql2o;
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -6,19 +6,14 @@ import org.sql2o.Sql2oException;
 
 import java.util.List;
 
-public class Sql2oAnimalDao<Animal> implements AnimalDao {
+public class Sql2oAnimalDao implements AnimalDao {
     private final Sql2o sql2o;
     public Sql2oAnimalDao(Sql2o sql2o) {
         this.sql2o = sql2o;
     }
 
     @Override
-    public void add() {
-        add();
-    }
-
-    @Override
-    public void add(Object animal) {
+    public void add(Animal animal) {
         String sql = "INSERT INTO animals (species) VALUES (:species)";
         try(Connection con = sql2o.open()){
             int id = (int) con.createQuery(sql, true)

@@ -1,4 +1,4 @@
-package dao;
+package sql2o;
 
 import java.util.List;
 

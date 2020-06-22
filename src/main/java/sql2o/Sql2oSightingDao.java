@@ -1,4 +1,4 @@
-package dao;
+package sql2o;
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Sql2oSightingDao implements SightingDao {
 
-    private final Sql2o sql2o;
+    public final Sql2o sql2o;
 
     public Sql2oSightingDao(Sql2o sql2o){
         this.sql2o = sql2o;
