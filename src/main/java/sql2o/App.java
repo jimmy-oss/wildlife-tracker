@@ -29,8 +29,8 @@ public class App {
         //String connectionString = "jdbc:postgresql://localhost:5432/wildlife_tracker";
         //Sql2o sql2o = new Sql2o(connectionString, null, null);
         {
-            String connectionString = "jdbc:postgresql://ec2-23-21-76-49.compute-1.amazonaws.com:5432/df2ubtmuhc32s7"; //!
-            Sql2o sql2o = new Sql2o(connectionString, "stdhhdzdeynsis", "43a1b82999c0f772dbbd8f7602f0fa50c75b0c3e0f7b0c2caa36637a9569de10"); //!
+            String connectionString = "jdbc:postgresql:postgres://fxsckkdlnldszg:1fec21249a783ec7d24fd4ace3fc3a650e7fdac7ab58477c84cc5c27bd3a4ad3@ec2-18-214-211-47.compute-1.amazonaws.com:5432/d42fmh53a57h34"; //!
+            Sql2o sql2o = new Sql2o(connectionString, "fxsckkdlnldszg", "1fec21249a783ec7d24fd4ace3fc3a650e7fdac7ab58477c84cc5c27bd3a4ad3"); //!
 
 
             SightingDao sightingDao = new Sql2oSightingDao(sql2o);
