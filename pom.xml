@@ -49,7 +49,7 @@
                     <archive>
                         <!--  Change this to YOUR main class name if different. Usually, it will be App.  -->
                         <manifest>
-                            <mainClass>my-App</mainClass>
+                            <mainClass>my-app</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

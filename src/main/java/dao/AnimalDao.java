@@ -7,6 +7,8 @@ public interface AnimalDao<Animal> {
     //LIST
     List<Animal> getAll();
 
+    void add();
+
     //CREATE
     void add(Animal animal);
 
